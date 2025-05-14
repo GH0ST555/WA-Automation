@@ -1,0 +1,170 @@
+[2025-05-14 19:50:20] Attempting to send to Dad India
+[2025-05-14 19:50:20] Trying to find TextBox
+[2025-05-14 19:50:21] Found TextBox
+[2025-05-14 19:50:26] Finding Group
+[2025-05-14 19:50:26] Found Group
+[2025-05-14 19:50:28] Finding Text Box
+[2025-05-14 19:50:28] Found Text Box
+[2025-05-14 19:50:34] Finding Send Button...
+[2025-05-14 19:50:45] Reruting to handle failure. Reason: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF66C5DCF65+75717]
+	GetHandleVerifier [0x00007FF66C5DCFC0+75808]
+	(No symbol) [0x00007FF66C3A8F9A]
+	(No symbol) [0x00007FF66C3FF4C6]
+	(No symbol) [0x00007FF66C3FF77C]
+	(No symbol) [0x00007FF66C452577]
+	(No symbol) [0x00007FF66C4273BF]
+	(No symbol) [0x00007FF66C44F39C]
+	(No symbol) [0x00007FF66C427153]
+	(No symbol) [0x00007FF66C3F0421]
+	(No symbol) [0x00007FF66C3F11B3]
+	GetHandleVerifier [0x00007FF66C8DD74D+3223469]
+	GetHandleVerifier [0x00007FF66C8D7CF2+3200338]
+	GetHandleVerifier [0x00007FF66C8F5B23+3322755]
+	GetHandleVerifier [0x00007FF66C5F6A3A+180890]
+	GetHandleVerifier [0x00007FF66C5FE13F+211359]
+	GetHandleVerifier [0x00007FF66C5E52B4+109332]
+	GetHandleVerifier [0x00007FF66C5E5462+109762]
+	GetHandleVerifier [0x00007FF66C5CBA79+4825]
+	BaseThreadInitThunk [0x00007FFD10C9E8D7+23]
+	RtlUserThreadStart [0x00007FFD11BFC5DC+44]
+
+[2025-05-14 19:50:45] Clicked cancel search to reset.
+[2025-05-14 19:50:47] Attempting to send to Fail
+[2025-05-14 19:50:47] Trying to find TextBox
+[2025-05-14 19:50:47] Found TextBox
+[2025-05-14 19:50:55] Finding Group
+[2025-05-14 19:50:55] Reruting to handle failure. Reason: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@title='Fail']"}
+  (Session info: chrome=136.0.7103.93); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF66C5DCF65+75717]
+	GetHandleVerifier [0x00007FF66C5DCFC0+75808]
+	(No symbol) [0x00007FF66C3A8F9A]
+	(No symbol) [0x00007FF66C3FF4C6]
+	(No symbol) [0x00007FF66C3FF77C]
+	(No symbol) [0x00007FF66C452577]
+	(No symbol) [0x00007FF66C4273BF]
+	(No symbol) [0x00007FF66C44F39C]
+	(No symbol) [0x00007FF66C427153]
+	(No symbol) [0x00007FF66C3F0421]
+	(No symbol) [0x00007FF66C3F11B3]
+	GetHandleVerifier [0x00007FF66C8DD74D+3223469]
+	GetHandleVerifier [0x00007FF66C8D7CF2+3200338]
+	GetHandleVerifier [0x00007FF66C8F5B23+3322755]
+	GetHandleVerifier [0x00007FF66C5F6A3A+180890]
+	GetHandleVerifier [0x00007FF66C5FE13F+211359]
+	GetHandleVerifier [0x00007FF66C5E52B4+109332]
+	GetHandleVerifier [0x00007FF66C5E5462+109762]
+	GetHandleVerifier [0x00007FF66C5CBA79+4825]
+	BaseThreadInitThunk [0x00007FFD10C9E8D7+23]
+	RtlUserThreadStart [0x00007FFD11BFC5DC+44]
+
+[2025-05-14 19:50:58]  Could not click cancel search: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.93)
+Stacktrace:
+	GetHandleVerifier [0x00007FF66C5DCF65+75717]
+	GetHandleVerifier [0x00007FF66C5DCFC0+75808]
+	(No symbol) [0x00007FF66C3A8F9A]
+	(No symbol) [0x00007FF66C394E35]
+	(No symbol) [0x00007FF66C3B9DB4]
+	(No symbol) [0x00007FF66C42EE75]
+	(No symbol) [0x00007FF66C44ECC2]
+	(No symbol) [0x00007FF66C427153]
+	(No symbol) [0x00007FF66C3F0421]
+	(No symbol) [0x00007FF66C3F11B3]
+	GetHandleVerifier [0x00007FF66C8DD74D+3223469]
+	GetHandleVerifier [0x00007FF66C8D7CF2+3200338]
+	GetHandleVerifier [0x00007FF66C8F5B23+3322755]
+	GetHandleVerifier [0x00007FF66C5F6A3A+180890]
+	GetHandleVerifier [0x00007FF66C5FE13F+211359]
+	GetHandleVerifier [0x00007FF66C5E52B4+109332]
+	GetHandleVerifier [0x00007FF66C5E5462+109762]
+	GetHandleVerifier [0x00007FF66C5CBA79+4825]
+	BaseThreadInitThunk [0x00007FFD10C9E8D7+23]
+	RtlUserThreadStart [0x00007FFD11BFC5DC+44]
+
+[2025-05-14 19:53:48] Attempting to send to Dad India
+[2025-05-14 19:53:48] Trying to find TextBox
+[2025-05-14 19:53:48] Found TextBox
+[2025-05-14 19:53:55] Finding Group
+[2025-05-14 19:53:55] Found Group
+[2025-05-14 19:53:58] Finding Text Box
+[2025-05-14 19:53:58] Found Text Box
+[2025-05-14 19:54:05] Finding Send Button...
+[2025-05-14 19:54:15] Reruting to handle failure. Reason: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF66C5DCF65+75717]
+	GetHandleVerifier [0x00007FF66C5DCFC0+75808]
+	(No symbol) [0x00007FF66C3A8F9A]
+	(No symbol) [0x00007FF66C3FF4C6]
+	(No symbol) [0x00007FF66C3FF77C]
+	(No symbol) [0x00007FF66C452577]
+	(No symbol) [0x00007FF66C4273BF]
+	(No symbol) [0x00007FF66C44F39C]
+	(No symbol) [0x00007FF66C427153]
+	(No symbol) [0x00007FF66C3F0421]
+	(No symbol) [0x00007FF66C3F11B3]
+	GetHandleVerifier [0x00007FF66C8DD74D+3223469]
+	GetHandleVerifier [0x00007FF66C8D7CF2+3200338]
+	GetHandleVerifier [0x00007FF66C8F5B23+3322755]
+	GetHandleVerifier [0x00007FF66C5F6A3A+180890]
+	GetHandleVerifier [0x00007FF66C5FE13F+211359]
+	GetHandleVerifier [0x00007FF66C5E52B4+109332]
+	GetHandleVerifier [0x00007FF66C5E5462+109762]
+	GetHandleVerifier [0x00007FF66C5CBA79+4825]
+	BaseThreadInitThunk [0x00007FFD10C9E8D7+23]
+	RtlUserThreadStart [0x00007FFD11BFC5DC+44]
+
+[2025-05-14 19:54:15] Clicked cancel search to reset.
+[2025-05-14 20:01:46] Attempting to send to Dad India
+[2025-05-14 20:01:46] Trying to find TextBox
+[2025-05-14 20:01:46] Found TextBox
+[2025-05-14 20:01:54] Finding Group
+[2025-05-14 20:01:54] Found Group
+[2025-05-14 20:01:56] Finding Text Box
+[2025-05-14 20:01:56] Found Text Box
+[2025-05-14 20:02:03] Finding Send icon after pasting imgs...
+[2025-05-14 20:02:03] Found Send icon After imgs
+[2025-05-14 20:02:03] Clicked Send Button
+[2025-05-14 20:02:07] Attempting to send to Fail
+[2025-05-14 20:02:07] Trying to find TextBox
+[2025-05-14 20:02:07] Found TextBox
+[2025-05-14 20:02:13] Finding Group
+[2025-05-14 20:02:13] Reruting to handle failure. Reason: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@title='Fail']"}
+  (Session info: chrome=136.0.7103.93); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF66C5DCF65+75717]
+	GetHandleVerifier [0x00007FF66C5DCFC0+75808]
+	(No symbol) [0x00007FF66C3A8F9A]
+	(No symbol) [0x00007FF66C3FF4C6]
+	(No symbol) [0x00007FF66C3FF77C]
+	(No symbol) [0x00007FF66C452577]
+	(No symbol) [0x00007FF66C4273BF]
+	(No symbol) [0x00007FF66C44F39C]
+	(No symbol) [0x00007FF66C427153]
+	(No symbol) [0x00007FF66C3F0421]
+	(No symbol) [0x00007FF66C3F11B3]
+	GetHandleVerifier [0x00007FF66C8DD74D+3223469]
+	GetHandleVerifier [0x00007FF66C8D7CF2+3200338]
+	GetHandleVerifier [0x00007FF66C8F5B23+3322755]
+	GetHandleVerifier [0x00007FF66C5F6A3A+180890]
+	GetHandleVerifier [0x00007FF66C5FE13F+211359]
+	GetHandleVerifier [0x00007FF66C5E52B4+109332]
+	GetHandleVerifier [0x00007FF66C5E5462+109762]
+	GetHandleVerifier [0x00007FF66C5CBA79+4825]
+	BaseThreadInitThunk [0x00007FFD10C9E8D7+23]
+	RtlUserThreadStart [0x00007FFD11BFC5DC+44]
+
+[2025-05-14 20:02:13] Clicked cancel search to reset.
+[2025-05-14 20:02:15] Attempting to send to Mini
+[2025-05-14 20:02:15] Trying to find TextBox
+[2025-05-14 20:02:15] Found TextBox
+[2025-05-14 20:02:21] Finding Group
+[2025-05-14 20:02:22] Found Group
+[2025-05-14 20:02:24] Finding Text Box
+[2025-05-14 20:02:24] Found Text Box
+[2025-05-14 20:02:31] Finding Send icon after pasting imgs...
+[2025-05-14 20:02:31] Found Send icon After imgs
+[2025-05-14 20:02:31] Clicked Send Button

@@ -1,0 +1,4 @@
+1 out of 3 contacts failed to receive messages.
+
+Failed contacts:
+Fail

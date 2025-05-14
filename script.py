@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support import expected_conditions as EC
 import time
 import os
 import win32clipboard
@@ -13,7 +14,15 @@ import random
 import tkinter as tk
 from tkinter import ttk
 import threading
+import logging
+import pyautogui
 
+logging.basicConfig(
+    filename='log.txt',
+    level=logging.INFO,
+    format='[%(asctime)s] %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 
 #Photos Initialization
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -22,69 +31,123 @@ image_files = [os.path.join(image_folder, f) for f in os.listdir(image_folder)]
 
 #initialize contact
 contact = []
+failures = []
+
 with open("groups.txt", "r") as f:
     for x in f:
         contact.append(x.strip())
+    
+    
 
 #Selenium Initialization
 driver = webdriver.Chrome()
 driver.get("https://web.whatsapp.com")
 
 
-
-
-
-#function to copy image to clipboard
+#function to copy image to clipboard unused
 def copy_image_to_clipboard(image_path):
-    image = Image.open(image_path)
-    
-    output = BytesIO()
-    image.convert("RGB").save(output, "BMP")
-    data = output.getvalue()[14:]
-    output.close()
-    
-    win32clipboard.OpenClipboard()
-    win32clipboard.EmptyClipboard()
-    win32clipboard.SetClipboardData(win32clipboard.CF_DIB, data)
-    win32clipboard.CloseClipboard()
+    if not os.path.exists(image_path):
+        logging.info(f" Image path not found: {image_path}")
+        return
+
+    try:
+        image = Image.open(image_path)
+        logging.info(f"Opened image: {image_path}")
+        logging.info(f"Image mode: {image.mode}")
+        
+        output = BytesIO()
+        image.convert("RGB").save(output, "BMP")
+        data = output.getvalue()[14:]  # Skip BMP header
+        output.close()
+
+        win32clipboard.OpenClipboard()
+        win32clipboard.EmptyClipboard()
+        win32clipboard.SetClipboardData(win32clipboard.CF_DIB, data)
+        win32clipboard.CloseClipboard()
+
+        print("✅ Image copied to clipboard.")
+
+    except Exception as e:
+        print(f"❌ Failed to copy image: {e}")
 
 def send_message(group_name):
+    logging.info(f"Attempting to send to {group_name}")
+    logging.info("Trying to find TextBox")
+    inp_xpath_search = "//div[@aria-label='Search input textbox']"
+    input_box_search = WebDriverWait(driver, 20).until(lambda d: d.find_element(By.XPATH, inp_xpath_search))
+    input_box_search.click()
+    logging.info("Found TextBox")
+    time.sleep(random.uniform(2, 5))
+
+    print("Attempting to enter contact")
+    input_box_p_element = '//p[@class ="selectable-text copyable-text x15bjb6t x1n2onr6"]'
+    input_box_search_p = WebDriverWait(driver, 20).until(lambda d: d.find_element(By.XPATH, input_box_p_element))
+    input_box_search_p.send_keys(group_name)
+    print("Found And Entered Contact")
+    time.sleep(random.uniform(2, 5))
+
+
+
+    #at any point when attempting to push text to the image
     try:
-        inp_xpath_search = "//button[@aria-label='Search or start new chat']"
-        input_box_search = WebDriverWait(driver, 20).until(lambda d: d.find_element("xpath",inp_xpath_search))
-        input_box_search.click()
-        time.sleep(2)
-
-        #Locate the p element to type the text in
-        input_box_p_element = '//p[@class ="selectable-text copyable-text iq0m558w g0rxnol2"]'
-        input_box_search_p = WebDriverWait(driver, 20).until(lambda d: d.find_element("xpath",input_box_p_element))
-        input_box_search_p.send_keys(group_name)
-        
-        time.sleep(2)
-
-        selected_contact = driver.find_element("xpath","//span[@title='"+group_name+"']")
+        logging.info("Finding Group")
+        selected_contact = driver.find_element(By.XPATH, f"//span[@title='{group_name}']")
         selected_contact.click()
+        logging.info("Found Group")
+        time.sleep(random.uniform(1, 3))
+
+        logging.info("Finding Text Box")
+        inp_xpath = "//div[@aria-label='Type a message' and @role='textbox']//p"
+        input_box = WebDriverWait(driver, 10).until(lambda d: d.find_element(By.XPATH, inp_xpath))
+        logging.info("Found Text Box")
+
+        # Type the message
+
+
         for image_file in image_files:
             # Copy the image to clipboard
             copy_image_to_clipboard(image_file)
 
-            # Find the WhatsApp chat input box
-            inp_xpath = '//div[@class="to2l77zo gfz4du6o ag5g9lrv bze30y65 kao4egtt"][@contenteditable="true"][@data-tab="10"]'
-            input_box = driver.find_element("xpath",inp_xpath)
-            time.sleep(2)
-            
             # Simulate the CTRL+V operation to paste the image
             input_box.send_keys(Keys.CONTROL, "v")
-            time.sleep(2)
+            time.sleep(random.uniform(2, 4))
+
+
+
+        logging.info("Finding Send icon after pasting imgs...")
+        element = driver.find_element(By.XPATH, '//div[@role="button" and @aria-label="Send"]')
+
+
+
+        logging.info("Found Send icon After imgs")
+        driver.execute_script("arguments[0].click();", element)
+        logging.info("Clicked Send Button")
+        time.sleep(random.uniform(1, 3))
+
+        input_box2 = WebDriverWait(driver, 10).until(lambda d: d.find_element(By.XPATH, inp_xpath))
+        input_box2.send_keys('This is a test message from WA automation code by Arjun :)')
+        time.sleep(random.uniform(1, 3))
+        driver.find_element(By.XPATH, '//button[@aria-label="Send"]').click()
+
+
 
     except Exception as e:
-        raise RuntimeError(str(e)) 
+        failures.append(group_name)
+        logging.info(f"Reruting to handle failure. Reason: {e}")
+        cancel_search()
+        return
 
-    send_btn_xpath = '//div[@class="g0rxnol2"]'
-    button = driver.find_element("xpath",send_btn_xpath)
-    time.sleep(2)
-    button.click()
-    time.sleep(10)
+
+def cancel_search():
+    """Click the 'Cancel search' button to reset the state."""
+    try:
+        cancel_btn_xpath = '//button[@aria-label="Cancel search"]'
+        cancel_btn = WebDriverWait(driver, 5).until(lambda d: d.find_element(By.XPATH, cancel_btn_xpath))
+        cancel_btn.click()
+        logging.info("Clicked cancel search to reset.")
+        time.sleep(random.uniform(1, 3))
+    except Exception as ce:
+        logging.info(f" Could not click cancel search: {ce}")
 
 
 def update_progress_text(count, total):
@@ -119,6 +182,16 @@ def start_automation():
             return 
     show_completion_message()
 
+    with open("failures.txt", "w") as f:
+        if not failures:
+            f.write(f"All {len(contact)} contacts received messages successfully. No failures to log.\n")
+        else:
+            f.write(f"{len(failures)} out of {len(contact)} contacts failed to receive messages.\n\n")
+            f.write("Failed contacts:\n")
+            for name in failures:
+                f.write(name + "\n")
+
+
 def start_thread():
     threading.Thread(target=start_automation).start()
 
@@ -145,6 +218,8 @@ def error_handler(contact_name, error_message):
     
     ok_button = ttk.Button(frame, text="OK", command=exit_program)
     ok_button.grid(row=3, column=0, pady=(10, 10))
+
+
 
 root = tk.Tk()
 root.title("WhatsApp Automation")
@@ -184,3 +259,8 @@ root.mainloop()
 # input_box.send_keys(text + Keys.ENTER)
 # time.sleep(2)
 # driver.quit()
+
+
+
+
+
