@@ -168,3 +168,159 @@ Stacktrace:
 [2025-05-14 20:02:31] Finding Send icon after pasting imgs...
 [2025-05-14 20:02:31] Found Send icon After imgs
 [2025-05-14 20:02:31] Clicked Send Button
+[2025-07-09 06:51:50] Attempting to send to Dad India
+[2025-07-09 06:51:50] Trying to find TextBox
+[2025-07-09 06:51:54] Found TextBox
+[2025-07-09 06:52:02] Finding Group
+[2025-07-09 06:52:02] Found Group
+[2025-07-09 06:52:05] Finding Text Box
+[2025-07-09 06:52:05] Found Text Box
+[2025-07-09 06:52:05] Opened image: C:\Users\arjun\OneDrive\Desktop\WA-Automation\photos\Gaalaxy S20 wallpaper 11.png
+[2025-07-09 06:52:05] Image mode: RGB
+[2025-07-09 06:52:10] Opened image: C:\Users\arjun\OneDrive\Desktop\WA-Automation\photos\ResizerImage800X200 (2).jpg
+[2025-07-09 06:52:10] Image mode: RGB
+[2025-07-09 06:52:14] Finding Send icon after pasting imgs...
+[2025-07-09 06:52:14] Found Send icon After imgs
+[2025-07-09 06:52:15] Clicked Send Button
+[2025-07-09 06:52:21] Reruting to handle failure. Reason: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label="Send"]"}
+  (Session info: chrome=138.0.7204.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff601886f75+76917]
+	GetHandleVerifier [0x0x7ff601886fd0+77008]
+	(No symbol) [0x0x7ff601639dea]
+	(No symbol) [0x0x7ff601690256]
+	(No symbol) [0x0x7ff60169050c]
+	(No symbol) [0x0x7ff6016e3887]
+	(No symbol) [0x0x7ff6016b84af]
+	(No symbol) [0x0x7ff6016e065c]
+	(No symbol) [0x0x7ff6016b8243]
+	(No symbol) [0x0x7ff601681431]
+	(No symbol) [0x0x7ff6016821c3]
+	GetHandleVerifier [0x0x7ff601b5d2ad+3051437]
+	GetHandleVerifier [0x0x7ff601b57903+3028483]
+	GetHandleVerifier [0x0x7ff601b7589d+3151261]
+	GetHandleVerifier [0x0x7ff6018a183e+185662]
+	GetHandleVerifier [0x0x7ff6018a96ff+218111]
+	GetHandleVerifier [0x0x7ff60188faf4+112628]
+	GetHandleVerifier [0x0x7ff60188fca9+113065]
+	GetHandleVerifier [0x0x7ff601876c78+10616]
+	BaseThreadInitThunk [0x0x7fff4e40e8d7+23]
+	RtlUserThreadStart [0x0x7fff4f69c34c+44]
+
+[2025-07-09 06:52:26]  Could not click cancel search: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff601886f75+76917]
+	GetHandleVerifier [0x0x7ff601886fd0+77008]
+	(No symbol) [0x0x7ff601639dea]
+	(No symbol) [0x0x7ff601690256]
+	(No symbol) [0x0x7ff60169050c]
+	(No symbol) [0x0x7ff6016e3887]
+	(No symbol) [0x0x7ff6016b84af]
+	(No symbol) [0x0x7ff6016e065c]
+	(No symbol) [0x0x7ff6016b8243]
+	(No symbol) [0x0x7ff601681431]
+	(No symbol) [0x0x7ff6016821c3]
+	GetHandleVerifier [0x0x7ff601b5d2ad+3051437]
+	GetHandleVerifier [0x0x7ff601b57903+3028483]
+	GetHandleVerifier [0x0x7ff601b7589d+3151261]
+	GetHandleVerifier [0x0x7ff6018a183e+185662]
+	GetHandleVerifier [0x0x7ff6018a96ff+218111]
+	GetHandleVerifier [0x0x7ff60188faf4+112628]
+	GetHandleVerifier [0x0x7ff60188fca9+113065]
+	GetHandleVerifier [0x0x7ff601876c78+10616]
+	BaseThreadInitThunk [0x0x7fff4e40e8d7+23]
+	RtlUserThreadStart [0x0x7fff4f69c34c+44]
+
+[2025-07-09 06:52:26] Attempting to send to Fail
+[2025-07-09 06:52:26] Trying to find TextBox
+[2025-07-09 06:52:26] Found TextBox
+[2025-07-09 06:52:33] Finding Group
+[2025-07-09 06:52:33] Reruting to handle failure. Reason: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@title='Fail']"}
+  (Session info: chrome=138.0.7204.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff601886f75+76917]
+	GetHandleVerifier [0x0x7ff601886fd0+77008]
+	(No symbol) [0x0x7ff601639dea]
+	(No symbol) [0x0x7ff601690256]
+	(No symbol) [0x0x7ff60169050c]
+	(No symbol) [0x0x7ff6016e3887]
+	(No symbol) [0x0x7ff6016b84af]
+	(No symbol) [0x0x7ff6016e065c]
+	(No symbol) [0x0x7ff6016b8243]
+	(No symbol) [0x0x7ff601681431]
+	(No symbol) [0x0x7ff6016821c3]
+	GetHandleVerifier [0x0x7ff601b5d2ad+3051437]
+	GetHandleVerifier [0x0x7ff601b57903+3028483]
+	GetHandleVerifier [0x0x7ff601b7589d+3151261]
+	GetHandleVerifier [0x0x7ff6018a183e+185662]
+	GetHandleVerifier [0x0x7ff6018a96ff+218111]
+	GetHandleVerifier [0x0x7ff60188faf4+112628]
+	GetHandleVerifier [0x0x7ff60188fca9+113065]
+	GetHandleVerifier [0x0x7ff601876c78+10616]
+	BaseThreadInitThunk [0x0x7fff4e40e8d7+23]
+	RtlUserThreadStart [0x0x7fff4f69c34c+44]
+
+[2025-07-09 06:52:33] Clicked cancel search to reset.
+[2025-07-09 06:52:35] Attempting to send to Mini
+[2025-07-09 06:52:35] Trying to find TextBox
+[2025-07-09 06:52:35] Found TextBox
+[2025-07-09 06:52:44] Finding Group
+[2025-07-09 06:52:44] Found Group
+[2025-07-09 06:52:46] Finding Text Box
+[2025-07-09 06:52:46] Found Text Box
+[2025-07-09 06:52:46] Opened image: C:\Users\arjun\OneDrive\Desktop\WA-Automation\photos\Gaalaxy S20 wallpaper 11.png
+[2025-07-09 06:52:46] Image mode: RGB
+[2025-07-09 06:52:50] Opened image: C:\Users\arjun\OneDrive\Desktop\WA-Automation\photos\ResizerImage800X200 (2).jpg
+[2025-07-09 06:52:50] Image mode: RGB
+[2025-07-09 06:52:55] Finding Send icon after pasting imgs...
+[2025-07-09 06:52:55] Found Send icon After imgs
+[2025-07-09 06:52:56] Clicked Send Button
+[2025-07-09 06:53:00] Reruting to handle failure. Reason: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label="Send"]"}
+  (Session info: chrome=138.0.7204.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff601886f75+76917]
+	GetHandleVerifier [0x0x7ff601886fd0+77008]
+	(No symbol) [0x0x7ff601639dea]
+	(No symbol) [0x0x7ff601690256]
+	(No symbol) [0x0x7ff60169050c]
+	(No symbol) [0x0x7ff6016e3887]
+	(No symbol) [0x0x7ff6016b84af]
+	(No symbol) [0x0x7ff6016e065c]
+	(No symbol) [0x0x7ff6016b8243]
+	(No symbol) [0x0x7ff601681431]
+	(No symbol) [0x0x7ff6016821c3]
+	GetHandleVerifier [0x0x7ff601b5d2ad+3051437]
+	GetHandleVerifier [0x0x7ff601b57903+3028483]
+	GetHandleVerifier [0x0x7ff601b7589d+3151261]
+	GetHandleVerifier [0x0x7ff6018a183e+185662]
+	GetHandleVerifier [0x0x7ff6018a96ff+218111]
+	GetHandleVerifier [0x0x7ff60188faf4+112628]
+	GetHandleVerifier [0x0x7ff60188fca9+113065]
+	GetHandleVerifier [0x0x7ff601876c78+10616]
+	BaseThreadInitThunk [0x0x7fff4e40e8d7+23]
+	RtlUserThreadStart [0x0x7fff4f69c34c+44]
+
+[2025-07-09 06:53:05]  Could not click cancel search: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff601886f75+76917]
+	GetHandleVerifier [0x0x7ff601886fd0+77008]
+	(No symbol) [0x0x7ff601639dea]
+	(No symbol) [0x0x7ff601690256]
+	(No symbol) [0x0x7ff60169050c]
+	(No symbol) [0x0x7ff6016e3887]
+	(No symbol) [0x0x7ff6016b84af]
+	(No symbol) [0x0x7ff6016e065c]
+	(No symbol) [0x0x7ff6016b8243]
+	(No symbol) [0x0x7ff601681431]
+	(No symbol) [0x0x7ff6016821c3]
+	GetHandleVerifier [0x0x7ff601b5d2ad+3051437]
+	GetHandleVerifier [0x0x7ff601b57903+3028483]
+	GetHandleVerifier [0x0x7ff601b7589d+3151261]
+	GetHandleVerifier [0x0x7ff6018a183e+185662]
+	GetHandleVerifier [0x0x7ff6018a96ff+218111]
+	GetHandleVerifier [0x0x7ff60188faf4+112628]
+	GetHandleVerifier [0x0x7ff60188fca9+113065]
+	GetHandleVerifier [0x0x7ff601876c78+10616]
+	BaseThreadInitThunk [0x0x7fff4e40e8d7+23]
+	RtlUserThreadStart [0x0x7fff4f69c34c+44]
+

@@ -1,4 +1,6 @@
-1 out of 3 contacts failed to receive messages.
+3 out of 3 contacts failed to receive messages.
 
 Failed contacts:
+Dad India
 Fail
+Mini

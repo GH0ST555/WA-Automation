@@ -33,7 +33,7 @@ image_files = [os.path.join(image_folder, f) for f in os.listdir(image_folder)]
 contact = []
 failures = []
 
-with open("groups.txt", "r") as f:
+with open("contacts.txt", "r") as f:
     for x in f:
         contact.append(x.strip())
     
@@ -125,10 +125,14 @@ def send_message(group_name):
         time.sleep(random.uniform(1, 3))
 
         input_box2 = WebDriverWait(driver, 10).until(lambda d: d.find_element(By.XPATH, inp_xpath))
-        input_box2.send_keys('This is a test message from WA automation code by Arjun :)')
+
+
+	# INSERT TEXT HERE ------------------------------------------------------------------
+        input_box2.send_keys('for more details :- https://www.facebook.com/share/r/1F7N1Rd3gq/ \n https://www.facebook.com/share/p/1EGTFB6VgF/ \n We are open for Demo/Viewing on Saturdays & Sundays \nContact us https://wa.me/+919745123322 \n')
+	#-------------------------------------------------------------------------------------
+	
         time.sleep(random.uniform(1, 3))
         driver.find_element(By.XPATH, '//button[@aria-label="Send"]').click()
-
 
 
     except Exception as e:
